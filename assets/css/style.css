@@ -1,0 +1,35 @@
+.center.navbar .nav,
+.center.navbar .brand,
+.center.navbar .nav > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    *zoom:1; /* hasLayout ie7 trigger */
+    vertical-align: middle;
+}
+
+.center.navbar .nav > .active > a, 
+.center.navbar .nav > .active > a:hover, 
+.center.navbar .nav > .active > a:focus {
+	text-decoration: none;
+	background-color: inherit;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.center .navbar-inner {
+    text-align:center;
+}
+
+.center .dropdown-menu {
+    text-align: left;
+}
+
+
+#RyanEndacott {
+	font-size: 30px;
+	line-height: 30px;
+	margin-right: 7px;
+	margin-left: 7px;
+}
