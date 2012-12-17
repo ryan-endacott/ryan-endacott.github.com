@@ -2,4 +2,3 @@ auto: true
 markdown: rdiscount
 permalink: /blog/:title
 rdiscount extensions: [smart]
-url: http://ryan-endacott.github.com/
