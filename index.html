@@ -3,26 +3,66 @@ layout: layout
 title: Ryan Endacott
 ---
 <div id="main-hero" class="hero-unit"> 
-    <img src="http://www.gravatar.com/avatar/e126c571c26ec28cbc8454a56818cf11?s=420" class="pull-right img-polaroid" height="210" width="210" alt="Picture of me!">
-    <h2>I'm Ryan and I love programming.</h2> 
+    <img id="my-gravatar" src="http://www.gravatar.com/avatar/e126c571c26ec28cbc8454a56818cf11?s=420" class="pull-right img-polaroid" height="210" width="210" alt="Picture of me!">
+    <h2>I'm <span class="main-emphasis">Ryan</span> and I love <span class="main-emphasis"><div id="scroller">
+    	<ul class="unstyled">
+    		<li>programming</li>
+    		<li>learning</li>
+    		<li>creating</li>
+    		<li>technology</li>
+    	</ul>
+    </div></span></h2> 
     <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p> 
     <p><a class="btn btn-primary btn-large">Learn more »</a></p> 
 </div>
 <hr>
-<div class="row">
-	<div class="span3">
-	      <h2>Heading</h2>
-	      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-	      <p><a class="btn" href="#">View details »</a></p>
-    </div>
-    <div class="span3">
-	      <h2>Heading</h2>
-	      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-	      <p><a class="btn" href="#">View details »</a></p>
-	</div>
-    <div class="span3">
-	      <h2>Heading</h2>
-	      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-	      <p><a class="btn" href="#">View details »</a></p>
-    </div>
-</div>
+
+
+<script type="text/javascript">
+$(document).ready(function () {
+	var list = $('#scroller').children().children();
+
+    var max = list.length - 1,
+        index = 0,
+        fadeIn = true,
+        fadeTime = 1000,
+        interval = 1000;
+
+    function doFadeLoop() {
+
+
+        if (fadeIn) {
+
+            $(list[index]).fadeIn(fadeTime);
+
+            interval = 2000;
+
+        }
+        else {
+
+            $(list[index]).fadeOut(fadeTime);
+
+            index++;
+
+            if (index > max)
+                index = 0;
+
+            interval = 1000;
+
+        }
+
+        fadeIn = !fadeIn;
+
+        setTimeout(doFadeLoop, interval);
+
+    }
+
+
+    doFadeLoop();
+
+
+
+
+});
+
+</script>
