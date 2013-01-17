@@ -47,6 +47,7 @@
           <div class="nav-collapse collapse">
             <a class="brand" id="RyanEndacott" href="/">Ryan Endacott</a>
             <ul class="nav pull-right">
+              <li {% if page.title == 'Ryan Endacott' %}class="active"{% endif %}><a href="/">Home</a></li>
                 {% assign pages_list = site.pages %}
                 {% assign group = 'navigation' %}
                 {% include pages_list %}
