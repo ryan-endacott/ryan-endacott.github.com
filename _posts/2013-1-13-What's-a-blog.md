@@ -21,3 +21,10 @@ I think I'm going to use this first post to keep track of what I'd like to write
 * Goals, aspirations, finding your passion (I <3 code)
 * Functional programming (once I gain a reasonable understanding.  So far I'm a fan.)
 * Internship at HealthcareFirst
+
+
+Why not keep track of potential fun projects as well?
+
+### Potential Projects:
+* WebSpeech API chrome extension
+* Live markdown previewer to use with this site and Jekyll blogs in general to push for you.
