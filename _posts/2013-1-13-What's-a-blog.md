@@ -21,6 +21,7 @@ I think I'm going to use this first post to keep track of what I'd like to write
 * Goals, aspirations, finding your passion (I <3 code)
 * Functional programming (once I gain a reasonable understanding.  So far I'm a fan.)
 * Internship at HealthcareFirst
+* Yes, I really should start writing. 
 
 
 Why not keep track of potential fun projects as well?
