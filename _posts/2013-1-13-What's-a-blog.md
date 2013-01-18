@@ -29,3 +29,4 @@ Why not keep track of potential fun projects as well?
 ### Potential Projects:
 * WebSpeech API chrome extension
 * Live markdown previewer to use with this site and Jekyll blogs in general to push for you.
+* API project with twitter or facebook?
