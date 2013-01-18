@@ -2,6 +2,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	background-image: url(/assets/img/diamond_upholstery.png);
+	color: #464646;
 }
 
 .container-narrow {
@@ -17,6 +18,24 @@ body {
 
 .main-emphasis {
 	font-weight: bold;
+}
+
+.post-date {
+	margin-top: -12px;
+	margin-left: 5px;
+}
+
+.post-title {
+	line-height: 0px;
+}
+
+.post-description {
+	margin-top: 10px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
 }
 
 #main-content #main-hero {

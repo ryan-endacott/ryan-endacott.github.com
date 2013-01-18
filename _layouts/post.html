@@ -8,7 +8,8 @@ layout: default
 <div class="row">
 	<div class="span9">
         <small class="pull-right"><a href="/blog.html">Back to blog</a></small>
-		<h2>{{ page.title }}</h2>
+		<h2 class="post-title">{{ page.title }}</h2>
+        <small class="post-date muted">{{ page.date | date: "%B %e, %Y" }}</small>
 		<p>{{ content }}</p>
 	</div>
 
