@@ -23,7 +23,8 @@ I think I'm going to use this first post to keep track of what I'd like to write
 * Internship at HealthcareFirst
 * Yes, I really should start writing. 
 
-<script src="https://gist.github.com/4563585.js"></script>
+
+
 Why not keep track of potential fun projects as well?
 
 ### Potential Projects:
