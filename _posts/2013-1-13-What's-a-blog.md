@@ -25,8 +25,10 @@ I think I'm going to use this first post to keep track of what I'd like to write
 * How to start learning programming (and why you should care)
 
 
+
 Why not keep track of potential fun projects as well?
 
 ### Potential Projects:
 * WebSpeech API chrome extension
 * Live markdown previewer to use with this site and Jekyll blogs in general to push for you.
+* API project with twitter or facebook?
