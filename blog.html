@@ -8,10 +8,11 @@ linkname: Blog
 <br>
 <div class="row">
 	<div class="span9">
-		<h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		<h3 class="post-title unstyled"><a href="{{ post.url }}">{{ post.title }}</a></h3>
 		<small class="muted post-date">{{ post.date | date: "%B %e, %Y" }}</small>
 		<br>
 		<p class="post-description">{{ post.description }}</p>
+		<p><a href="{{ post.url }}" class="btn btn-small">Read more »</a></p>
 	</div>
 </div>
 <br>
