@@ -13,7 +13,7 @@ I think I'm going to use this first post to keep track of what I'd like to write
 ### Potential Topics:
 * Stuff I like (e.g. Github contributions graph and current streak(maybe it will help me keep up with blogging))
 * Particle system maybe?
-* PHP (ugh)
+* PHP (ugh) and opinions on other technologies
 * IdeaVIM letting me down (only slightly)
 * Battlecode (If I ever get a semidecent bot done)
 * MOOCs
