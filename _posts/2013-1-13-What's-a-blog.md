@@ -22,6 +22,7 @@ I think I'm going to use this first post to keep track of what I'd like to write
 * Functional programming (once I gain a reasonable understanding.  So far I'm a fan.)
 * Internship at HealthcareFirst
 * Yes, I really should start writing. 
+* How to start learning programming (and why you should care)
 
 
 Why not keep track of potential fun projects as well?
