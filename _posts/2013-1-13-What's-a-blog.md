@@ -22,7 +22,7 @@ I think I'm going to use this first post to keep track of what I'd like to write
 * Functional programming (once I gain a reasonable understanding.  So far I'm a fan.)
 * Internship at HealthcareFirst
 * Yes, I really should start writing. 
-* How to start learning programming (and why you should care)
+* How to start learning programming 
 
 
 
@@ -32,3 +32,4 @@ Why not keep track of potential fun projects as well?
 * WebSpeech API chrome extension
 * Live markdown previewer to use with this site and Jekyll blogs in general to push for you.
 * API project with twitter or facebook?  Or maybe reddit?  Maybe one that sees your active post times?
+* Change this from a jekyll blog to a node app...  It will make it way easier to stay motivated to write! (I think/hope)
