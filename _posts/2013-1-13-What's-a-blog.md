@@ -2,7 +2,7 @@
 layout: post
 title: What's a blog anyway....
 description: First post!  To keep track of potential topics.
-published: 'true'
+published: true
 ---
 
 Hello world!  This is my first ever Jekyll post on my first ever blog.  What a great way to herald in the new year!  I just hope that I can keep up with it and write often.
