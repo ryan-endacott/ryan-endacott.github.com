@@ -32,4 +32,5 @@ Why not keep track of potential fun projects as well?
 * WebSpeech API chrome extension
 * Live markdown previewer to use with this site and Jekyll blogs in general to push for you.
 * API project with twitter or facebook?  Or maybe reddit?  Maybe one that sees your active post times?
-* Change this from a jekyll blog to a node app... (or Rails?)  It will make it way easier to stay motivated to write! (I think/hope)
+* Change this from a jekyll blog to a node app... (or Rails?)  It will make it way easier to stay motivated to write! (I think/hope)  
+* Then I had another idea to write a rails/node app to manage and save jekyll blog posts before publishing.  Then I found [prose](http://prose.io), which does exactly what I wanted to!  Dang.  
