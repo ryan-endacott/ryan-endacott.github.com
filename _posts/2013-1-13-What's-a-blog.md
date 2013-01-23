@@ -1,11 +1,10 @@
 ---
 layout: post
 title: What's a blog anyway....
-description: First post!  To keep track of potential topics.
 published: true
 ---
 
-Hello world!  This is my first ever Jekyll post on my first ever blog.  What a great way to herald in the new year!  I just hope that I can keep up with it and write often.
+Hello world!  This is my first ever Jekyll post on my first ever blog.  What a great way to herald in the new year!  I just hope that I can keep up with it and write often.  Writing has historically been my achilles heel, but I hope to utilize my love of software to vanquish that.  
 
 I think I'm going to use this first post to keep track of what I'd like to write about.  At least for now.
 
