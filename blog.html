@@ -5,6 +5,7 @@ linkname: Blog
 ---
 
 {% for post in site.posts %}
+{% if post.published %}
 <br>
 <div class="row">
 	<div class="span9">
@@ -16,4 +17,5 @@ linkname: Blog
 	</div>
 </div>
 <br>
+{% endif %}
 {% endfor %}
