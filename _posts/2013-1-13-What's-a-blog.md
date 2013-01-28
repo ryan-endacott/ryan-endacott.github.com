@@ -32,4 +32,5 @@ Why not keep track of potential fun projects as well?
 * WebSpeech API chrome extension
 * Live markdown previewer to use with this site and Jekyll blogs in general to push for you.
 * API project with twitter or facebook?  Or maybe reddit?  Maybe one that sees your active post times?
+* Google Maps project 
 
