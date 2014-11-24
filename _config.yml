@@ -1,0 +1,17 @@
+name: Ryan Endacott
+description:
+meta_description:
+
+markdown: redcarpet
+highlighter: pygments
+logo: '/images/me.jpg'
+paginate: 3
+
+author:
+  name: 'Ryan Endacott'
+  website: 'http://ryan.endacott.me'
+  bio: ''
+  image: '/images/me.jpg'
+
+# Details for the RSS feed generator
+url: 'http://ryan.endacott.me'
