@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Upload Files to Database in Rails 4 without Paperclip"
+title:  "Upload Files to Database in Rails 4 Without Paperclip"
 date:   2014-06-10 17:29:17
 
 ---
