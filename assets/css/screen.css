@@ -3,7 +3,7 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 /* === Core Styles === */
 body {
-  color: #7f8c8d;
+  color: rgba(0,0,0,0.8);
   font-size: 15px;
   font-weight: 100;
   line-height: 1.6em;
