@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Intern at a Top Company Without Going to a Top School"
+title:  "How to Intern at a Top Company Without Going to a Top School"
 date:   2015-03-05 14:19:00
 
 ---
