@@ -5,8 +5,6 @@ date:   2025-03-05 16:20:00
 
 ---
 
-# Anyone Can Build in 2025
-
 *I was previously a senior software engineer at Google X (Loon), and now I'm a YC founder who builds software faster than ever, thanks to AI.*
 
 **I’m coding with AI all the time!** I have been coding with AI since ChatGPT came out in November 2022, with some experiments in the GPT-3 playground before that. It’s wild that was only about two years ago - AI has come *so far* since then.
