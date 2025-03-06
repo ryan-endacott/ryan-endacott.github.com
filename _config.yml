@@ -7,6 +7,9 @@ highlighter: pygments
 logo: '/images/me3.jpg'
 paginate: 3
 
+plugins:
+  - jekyll-paginate
+
 author:
   name: 'Ryan Endacott'
   website: 'http://ryan.endacott.me'
