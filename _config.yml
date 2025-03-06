@@ -4,14 +4,14 @@ meta_description:
 
 markdown: redcarpet
 highlighter: pygments
-logo: '/images/me2.jfif'
+logo: '/images/me3.jpg'
 paginate: 3
 
 author:
   name: 'Ryan Endacott'
   website: 'http://ryan.endacott.me'
   bio: ''
-  image: '/images/me2.jfif'
+  image: '/images/me3.jpg'
 
 # Details for the RSS feed generator
 url: 'http://ryan.endacott.me'
