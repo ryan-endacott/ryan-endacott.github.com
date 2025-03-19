@@ -48,7 +48,7 @@ Hope this was useful! I got carried away and wrote more than I intended, lol. Ca
 Seriously, anyone can do this stuff now. It's amazing.
 
 ![Fish simulator screenshot](/images/swim.png)
-*A multiplayer fish simulation I built in just a couple of hours using AI. Aren't Claude's fish adorable? 😂 [Play live here!](http://swim.endacott.me)*
+*A multiplayer fish simulation I built in just a couple hours using AI. Aren't Claude's fish adorable? [Play live here!](http://swim.endacott.me)*
 
 **Appendix**
 
