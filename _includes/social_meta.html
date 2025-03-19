@@ -1,0 +1,13 @@
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}">
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.meta_description }}{% endif %}">
+<meta property="og:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}{{ site.logo }}{% endif %}">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}">
+<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.meta_description }}{% endif %}">
+<meta name="twitter:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}{{ site.logo }}{% endif %}"> 

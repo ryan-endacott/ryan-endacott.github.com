@@ -1,6 +1,6 @@
 name: Ryan Endacott
-description:
-meta_description:
+description: Software Engineer and Entrepreneur
+meta_description: Ryan Endacott's personal website - Software Engineer and Entrepreneur
 
 markdown: kramdown
 highlighter: rouge
@@ -19,3 +19,9 @@ author:
 
 # Details for the RSS feed generator
 url: 'http://ryan.endacott.me'
+
+# Social Media
+social:
+  twitter: RyanEndacott
+  github: ryan-endacott
+  linkedin: ryanendacott

@@ -2,6 +2,7 @@
 layout: post
 title:  "Anyone Can Build in 2025"
 date:   2025-03-05 16:20:00
+description: "100% of my code is written with AI. I accomplish 10x more, way faster. Learn how anyone can build with AI - no matter your background."
 excerpt: "*I was previously a senior software engineer at Google X (Loon), and now I'm a YC founder at [Stella](http://chatwithstella.com) who builds software faster than ever, thanks to AI.*
 
 
