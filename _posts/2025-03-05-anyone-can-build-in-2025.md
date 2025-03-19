@@ -28,7 +28,7 @@ It's a crazy, exciting new world. Here are some tips I've learned:
 
 - **The learning curve is real at any experience level.** Whether you're brand new to coding or you're a seasoned developer, **you will definitely be less productive at first.** Many coders run into a wall and assume AI can't help with their tasks. Don't stop there - stick with it! You'll run into many painful and frustrating situations where the AI doesn't *quite* get what you mean, or introduces subtle bugs. Refine your instructions ("prompts"), refine the info you give the AI ("context"), and try again. Try a different model - they all have varying strengths and weaknesses. My current thoughts below [[0]](#0).
 
-- **Context is key.** You have access to a literal genius in **any** domain - you just have to give it the right data to base its decisions (and code) on. Tools like ***Cursor*** and ***RepoPrompt*** shine here [[1]](#1). They make it easy to pass *exactly* the right files and data to the AI. Just enough so it understands everything it needs in order to build your request. But not too much, so it doesn't get overwhelmed.
+- **Context is key. You have access to a literal genius in *any* domain** - you just have to give it the right data to base its decisions (and code) on. Tools like ***Cursor*** and ***RepoPrompt*** shine here [[1]](#1). They make it easy to pass *exactly* the right files and data to the AI. Just enough so it understands everything it needs in order to build your request. But not too much, so it doesn't get overwhelmed.
 
 ![Using Cursor to pass context](/images/cursor-context-example.png)
 *Using Cursor to pass specific files and context to the AI. You can see the banner it created [here](http://chatwithstella.com).*
