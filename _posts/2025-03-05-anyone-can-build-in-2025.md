@@ -2,7 +2,16 @@
 layout: post
 title:  "Anyone Can Build in 2025"
 date:   2025-03-05 16:20:00
+excerpt: "*I was previously a senior software engineer at Google X (Loon), and now I'm a YC founder at [Stella](http://chatwithstella.com) who builds software faster than ever, thanks to AI.*
 
+
+**100% of my code is written with AI. I accomplish 10x more, way faster.** AI prototypes entire products for me, fixes bugs while I'm meeting live with customers, and heck, I even used it to build a [multiplayer fish simulation](http://swim.endacott.me) in *one single instruction*\\! At this point, I don't think I could go back to the old way of building.
+
+
+**My goal with this post is simple:**
+
+
+**To inspire you and show that anyone can build with AI - no matter your background.**"
 ---
 
 *I was previously a senior software engineer at Google X (Loon), and now I'm a YC founder at [Stella](http://chatwithstella.com) who builds software faster than ever, thanks to AI.*
@@ -12,6 +21,8 @@ date:   2025-03-05 16:20:00
 **My goal with this post is simple:**
 
 **To inspire you and show that anyone can build with AI - no matter your background.**
+
+<!--more-->
 
 It's a crazy, exciting new world. Here are some tips I've learned:
 

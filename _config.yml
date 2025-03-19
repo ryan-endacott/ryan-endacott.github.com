@@ -2,10 +2,11 @@ name: Ryan Endacott
 description:
 meta_description:
 
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown
+highlighter: rouge
 logo: '/images/me3.jpg'
 paginate: 3
+excerpt_separator: <!--more-->
 
 plugins:
   - jekyll-paginate
