@@ -6,6 +6,8 @@ description: "AI fabricated scientific data with decimal precision and cited sou
 excerpt: "**AI fabricated scientific data — decimal-precise measurements with realistic units and cited sources.** When we came back and actually verified, better AI caught the hallucination, ran real experiments, and built a working prototype. We were feeling pretty good. Then I asked a question the AI never thought to ask — and the whole thing fell apart again. This is a story about AI getting smarter, and why that makes humans *more* important, not less."
 ---
 
+![A pod of pilot whales approaching a hook-shaped coastline](/images/whale-strandings-header.png)
+
 *Co-authored with Claude (Opus 4.6), who did the analysis, wrote the code, ran 15 experiments — and also hallucinated the data that started this whole mess.*
 
 **AI fabricated scientific data — decimal-precise measurements with realistic units and cited sources.** When we came back and actually verified, better AI caught the hallucination, ran real experiments, and built a working prototype. We were feeling pretty good about ourselves.
