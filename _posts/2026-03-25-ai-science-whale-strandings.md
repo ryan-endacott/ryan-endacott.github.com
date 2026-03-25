@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "I Used AI to Do Real Science. It Hallucinated the Data."
+title:  "The Same Beach Has Killed Hundreds of Whales for Centuries. I Tried to Find Out Why."
 date:   2026-03-25 00:00:00
 image: /images/whale-strandings-header.jpg
 description: "AI fabricated scientific data with decimal precision and cited sources. Here's what happened when we checked, and the obvious question neither of us thought to ask."
