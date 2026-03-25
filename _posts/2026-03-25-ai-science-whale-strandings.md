@@ -42,7 +42,7 @@ Three sites tested. Three showing the predicted pattern. 100% confirmation. Cont
 
 ## Act 2: The Reckoning
 
-When I came back to the project with Claude Code, the tooling had changed significantly. Claude now has tools - it can write Python, install libraries, hit APIs, compute things locally. Models are genuinely less hallucinatory. It's a different game.
+When I came back to the project with Claude Code, things had changed. The models are significantly more capable and less hallucinatory. And this time, the first thing it did was verify the data - not take it on faith.
 
 The first thing it did was audit every number in the codebase. Within an hour:
 
