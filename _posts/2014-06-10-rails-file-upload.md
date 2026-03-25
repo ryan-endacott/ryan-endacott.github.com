@@ -7,6 +7,8 @@ date:   2014-06-10 17:29:17
 
 While the [Paperclip](https://github.com/thoughtbot/paperclip) gem is awesome for most Rails use cases, it doesn't have support for saving files to a database. In some scenarios, access to the filesystem or an external service like [Amazon S3](http://aws.amazon.com/s3/) isn't feasible. Or maybe you just want to put your files in the database.
 
+<!--more-->
+
 As it happens, file upload in vanilla Rails is simple.
 
 First, create a model that will store the file. Give it the following attributes:

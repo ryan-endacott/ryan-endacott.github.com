@@ -5,7 +5,9 @@ date:   2015-03-05 14:19:00
 
 ---
 
-While many people doubt that you can intern at a top company without going to a target school like MIT or Stanford, it's definitely possible.  I go to a midwestern state school that’s not known for its Computer Science department, but I ended up interning at Facebook and Google.  Hopefully, these tips will help you to do the same!
+While many people doubt that you can intern at a top company without going to a target school like MIT or Stanford, it’s definitely possible.  I go to a midwestern state school that’s not known for its Computer Science department, but I ended up interning at Facebook and Google.  Hopefully, these tips will help you to do the same!
+
+<!--more-->
 
 The main difficulty I've encountered in coming from a school that's not well-known for CS is that it's very tough to get an interview.  I know people who interviewed with Google their freshman year just for having a decent GPA at MIT.  As a student from a lesser-known school, you won't have that luxury.
 
