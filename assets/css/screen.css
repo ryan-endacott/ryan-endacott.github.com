@@ -13,15 +13,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #e5e5e5;
-    --text-secondary: #999;
-    --bg: #111;
-    --accent: #60a5fa;
-    --accent-hover: #93bbfd;
-    --border: #333;
-    --code-bg: #1e1e1e;
+    --text: #e0e0e0;
+    --text-secondary: #888;
+    --bg: #161616;
+    --accent: #8ab4f8;
+    --accent-hover: #aecbfa;
+    --border: #2a2a2a;
+    --code-bg: #1c1c1c;
   }
-  img { opacity: 0.9; }
+  img { opacity: 0.92; }
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
