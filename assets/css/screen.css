@@ -104,8 +104,8 @@ section.intro {
 
 section.intro p {
   font-size: 1.1rem;
-  line-height: 1.75;
-  margin-bottom: 0.75rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
   color: var(--text);
 }
 
@@ -185,23 +185,23 @@ article.post .post-title {
 .post-content p,
 .post-content li,
 .post-excerpt p {
-  font-size: 1.1rem;
-  line-height: 1.75;
-  margin-bottom: 1.25rem;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
   color: var(--text);
 }
 
 .post-content h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 2.5rem 0 1rem;
+  margin: 3rem 0 1.25rem;
   letter-spacing: -0.01em;
 }
 
 .post-content h3 {
   font-size: 1.25rem;
   font-weight: 600;
-  margin: 2rem 0 0.75rem;
+  margin: 2.5rem 0 1rem;
 }
 
 .post-content a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
@@ -210,8 +210,8 @@ article.post .post-title {
 .post-content img {
   max-width: 100%;
   height: auto;
-  border-radius: 6px;
-  margin: 1.5rem 0;
+  border-radius: 8px;
+  margin: 2rem 0;
 }
 
 .post-content blockquote {
@@ -246,10 +246,11 @@ article.post .post-title {
 
 .post-content pre {
   background: var(--code-bg);
-  padding: 1.25rem;
-  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
   overflow-x: auto;
-  margin: 1.5rem 0;
+  margin: 2rem 0;
   line-height: 1.5;
 }
 

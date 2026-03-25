@@ -2,20 +2,19 @@
 layout: post
 title:  "I Used AI to Do Real Science. It Hallucinated the Data."
 date:   2026-03-25 00:00:00
-image: /images/whale-strandings-header.png
+image: /images/whale-strandings-header.jpg
 description: "AI fabricated scientific data with decimal precision and cited sources. Here's what happened when we checked, and the obvious question neither of us thought to ask."
-excerpt: "**AI fabricated scientific data. Decimal-precise measurements with realistic units and cited sources.** When we came back and actually verified, better AI caught the hallucination, ran real experiments, and built a working prototype. We were feeling pretty good. Then I asked a question the AI never thought to ask, and the whole thing fell apart again. This is a story about AI getting smarter, and why that makes humans *more* important, not less."
+excerpt: "**AI fabricated scientific data. Decimal-precise measurements with realistic units and cited sources.** When we came back and actually verified, better AI caught the hallucination, ran real experiments, and built a working prototype. We were feeling pretty good. Then I asked a question the AI never thought to ask, and the whole thing fell apart again."
 ---
 
-![A pod of pilot whales approaching a hook-shaped coastline](/images/whale-strandings-header.png)
+![A long-finned pilot whale surfacing](/images/whale-strandings-header.jpg)
+*Photo: [NOAA](https://unsplash.com/@noaa) via Unsplash*
 
 *Co-authored with Claude (Opus 4.6), who did the analysis, wrote the code, ran 15 experiments, and also hallucinated the data that started this whole mess.*
 
 **AI fabricated scientific data. Decimal-precise measurements with realistic units and cited sources.** When we came back and actually verified, better AI caught the hallucination, ran real experiments, and built a working prototype. We were feeling pretty good about ourselves.
 
 Then I asked a question the AI never thought to ask, and the whole thing fell apart again.
-
-This is a story about AI getting smarter, and why that makes humans *more* important, not less.
 
 <!--more-->
 
@@ -53,8 +52,6 @@ The first thing it did was audit every number in the codebase. Within an hour:
 
 When it needed the real magnetic field value, it didn't guess. It installed `ppigrf`, a Python library with the [official IGRF-14 geomagnetic coefficients](https://doi.org/10.5281/zenodo.14012302), wrote three lines of code, and computed the actual answer. Same math every geomagnetic observatory uses.
 
-Today's models are also genuinely less hallucinatory - more likely to say "I don't know, let me check" than to confidently invent an answer. Both the models and the workflows got better.
-
 With verified data across 15 sites, we tested everything:
 
 | Hypothesis | t-statistic | Verdict |
@@ -91,7 +88,7 @@ I checked the other controls. Matagorda-Padre Island, Texas - no evidence of pil
 
 The AI - the same AI that caught hallucinated magnetic field values, computed geophysics locally, and downloaded a 1.1 GB crustal anomaly dataset - **never thought to ask whether the animals actually go to the places we were studying.**
 
-It took a human thinking about whales as *intelligent animals*, not data points in a spreadsheet, to notice the most basic flaw in the experimental design.
+Could a reviewer agent have caught this? Probably. "Are these valid control sites for this species?" is exactly the kind of check a review loop would run. The AI wasn't incapable of asking the question - it was in execution mode, and nobody asked it to step back and review the experimental design.
 
 ## What This Actually Means
 
@@ -99,36 +96,14 @@ Here's the pattern across the whole project:
 
 - **Round 1 (2025):** AI fabricates data. Human needs to catch bad numbers. *Human fails.*
 - **Round 2 (2026):** Better AI catches bad numbers itself. Runs real analysis. Gets real results. *AI succeeds at the technical work.*
-- **Round 3 (2026):** Human asks "do whales even go there?" and reveals the whole comparison was flawed. *Human catches what AI can't.*
+- **Round 3 (2026):** Human asks "do whales even go there?" and reveals the whole comparison was flawed.
 
-Each round, the AI got more capable. And each round, the human's contribution shifted *upward*. The AI doesn't need you to check arithmetic anymore - it does that itself now. But someone still needs to ask **"are we even studying the right thing?"**
+The lesson isn't "humans are special." A well-designed review step - human or AI - would have caught the control site problem. The lesson is: **the analyst gets tunnel vision, whether it's a person or an AI. You need someone or something reviewing the premise, not just the execution.**
 
-That's not a technical skill. You don't need a PhD in marine biology. You just need to think about the problem like a person - with common sense, with empathy for the actual animals involved, with the kind of lateral thinking that comes from caring about the *meaning* of what you're doing, not just the execution.
+We didn't have that. The AI was busy computing gradients. I was busy being impressed by the gradients. Nobody stepped back to ask "but does this comparison even make sense?"
 
-**AI is getting incredibly capable. And that's making human judgment *more* important, not less** - because the questions that matter keep shifting to a higher level.
-
-## Three Things Worth Remembering
-
-**Start projects now. Finish them later.** AI capabilities are improving fast. A project that's frustrating today might be tractable in six months with better tools. Plant seeds now, come back when the tools catch up. Start the side project even if you can't finish it yet.
-
-**Follow the fun.** The original hypothesis was dead after 8 null results. We almost stopped. The pivot to "can we actually help whales?" came from following curiosity, not a research plan. The risk model - the most interesting outcome - wasn't planned at all. In my experience, AI does its best work when you're both genuinely interested in the problem.
-
-**Change the question, don't refine the answer.** We spent hours testing magnetic gradients at different resolutions. All null. The breakthrough came when we asked a completely different question. If you're stuck, don't keep polishing the same hypothesis. Ask something new.
-
-## Try It Yourself
-
-The whole project - code, data, journal entries, 15 experiment logs - is open source at [github.com/ryan-endacott/madscience](https://github.com/ryan-endacott/madscience).
-
-Every data source we used is free:
-- **[NOAA ERDDAP](https://coastwatch.pfeg.noaa.gov/erddap/)** - SST, chlorophyll, bathymetry. No auth needed.
-- **[ERA5](https://cds.climate.copernicus.eu)** - 35 years of global wind data. Free registration.
-- **[EMAG2v3](https://www.ngdc.noaa.gov/geomag/data/EMAG2/)** - Crustal magnetic anomaly data. Free download.
-- **ppigrf** - `pip install ppigrf`. Computes geomagnetic models locally using published coefficients.
-
-There's a methodology framework in the repo called **Scientific AI Sprints** - test hypotheses against existing public data before designing expensive experiments. The whale study is its first case study, including everything that went wrong.
-
-The whale stranding mystery isn't solved. But we know some things that don't cause them, we have a prototype that might help predict them, and we learned something important about how humans and AI work together.
+**AI has automated the easy mistakes and left us with the hard ones.** Catching fabricated numbers? Solved - compute it locally with published coefficients. But questioning whether the entire experimental design makes sense? That requires stepping out of execution mode, and right now, that's still mostly a human reflex. Not because AI can't do it - but because our workflows don't ask it to.
 
 Is this "real science"? A real marine biologist would have caught the control site problem in five seconds. We didn't pre-register hypotheses, we have n=11 events, and the most sophisticated finding is "strandings happen in summer." So... maybe not. But we used real data, real statistical tests, documented every mistake, and caught our own errors in public. I think there's something here, even if it's more "enthusiastic amateur with powerful tools" than "rigorous research." And honestly, I think that's the point - these tools make it possible for anyone to ask real questions of real data. You'll make mistakes. You'll learn. The data doesn't care about your credentials.
 
-*Total cost: ~$200/mo for Claude Max. $0 for data. The control sites need better selection. The whales are still stranding.*
+*All code, data, and analysis: [github.com/ryan-endacott/madscience](https://github.com/ryan-endacott/madscience). Total cost: ~$200/mo for Claude Max. $0 for data.*
