@@ -93,6 +93,50 @@ main.content {
   padding: 0 1.5rem;
 }
 
+/* === Intro === */
+
+section.intro {
+  margin-bottom: 3rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+section.intro p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+section.intro p:first-child {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+section.intro .intro-links {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+section.intro .intro-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+section.intro .intro-links a:hover {
+  color: var(--accent);
+}
+
+.section-heading {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
 /* === Posts === */
 
 article.preview {

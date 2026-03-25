@@ -1,26 +1,34 @@
 ---
 layout: default
 title: Home
-cover: false
-about: '/about.html'
 ---
 
 <main class="content" role="main">
 
-  {% for post in paginator.posts %}
-    <article class="preview">
-       <header>
-         <h1 class="post-title"><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></h1>
-         <div class="post-meta"><time datetime="{{ post.date | date: "%d %B, %Y" }}">{{ post.date | date: "%d %B, %Y" }}</time></div>
-       </header>
-       <section class="post-excerpt">
-           {{ post.excerpt | markdownify }}
-           <p class="readmore"><a href="{{ site.baseurl}}{{ post.url }}">Read this article <i class="fa fa-chevron-circle-right"></i></a></p>
-       </section>
-    </article>
+  <section class="intro">
+    <p>I'm Ryan. I build things with AI.</p>
+    <p>Currently building <a href="https://buildwithstar.com">Star</a> (YC S22) — an AI game builder where anyone can create playable browser games from a description. Previously senior engineer at Google X (<a href="https://x.company/projects/loon/">Loon</a>), where I helped bring internet to remote parts of the world via stratospheric balloons. Before that, I studied CS at <a href="https://missouri.edu">Mizzou</a> and co-founded <a href="https://tigerhacks.com">TigerHacks</a> — still going strong.</p>
+    <p>I angel invest in founders I believe in, tinker with <a href="https://github.com/ryan-endacott/madscience">AI-driven science</a>, and occasionally write about what I'm learning.</p>
+    <p>I love meeting builders and tinkerers — <a href="https://x.com/RyanEndacott">DM me on X</a> or connect on <a href="https://linkedin.com/in/ryanendacott">LinkedIn</a>.</p>
+  </section>
 
-  {% endfor %}
+  <section class="posts-section">
+    <h2 class="section-heading">Writing</h2>
 
-  {% include pagination.html %}
+    {% for post in paginator.posts %}
+      <article class="preview">
+         <header>
+           <h1 class="post-title"><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></h1>
+           <div class="post-meta"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time></div>
+         </header>
+         <section class="post-excerpt">
+             {{ post.excerpt | markdownify }}
+             <p class="readmore"><a href="{{ site.baseurl}}{{ post.url }}">Read more →</a></p>
+         </section>
+      </article>
+    {% endfor %}
+
+    {% include pagination.html %}
+  </section>
 
 </main>
