@@ -2,6 +2,7 @@
 layout: post
 title:  "I Used AI to Do Real Science. It Hallucinated the Data."
 date:   2026-03-25 12:00:00
+image: /images/whale-strandings-header.png
 description: "AI fabricated scientific data with decimal precision and cited sources. Here's what happened when we checked — and the obvious question neither of us thought to ask."
 excerpt: "**AI fabricated scientific data — decimal-precise measurements with realistic units and cited sources.** When we came back and actually verified, better AI caught the hallucination, ran real experiments, and built a working prototype. We were feeling pretty good. Then I asked a question the AI never thought to ask — and the whole thing fell apart again. This is a story about AI getting smarter, and why that makes humans *more* important, not less."
 ---

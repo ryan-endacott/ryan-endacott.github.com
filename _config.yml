@@ -1,6 +1,6 @@
 name: Ryan Endacott
-description: Software Engineer and Entrepreneur
-meta_description: Ryan Endacott's personal website - Software Engineer and Entrepreneur
+description: Builder, founder, tinkerer.
+meta_description: Ryan Endacott — builder, founder, tinkerer.
 
 markdown: kramdown
 highlighter: rouge
@@ -18,7 +18,7 @@ author:
   image: '/images/me3.jpg'
 
 # Details for the RSS feed generator
-url: 'http://ryan.endacott.me'
+url: 'https://ryan.endacott.me'
 
 # Social Media
 social:
