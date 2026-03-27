@@ -74,7 +74,7 @@ We pulled 20 years of satellite data - sea surface temperature, ocean chlorophyl
 
 Then we went further. I'd been following Karpathy's [autoresearch](https://github.com/karpathy/autoresearch) - a system that runs ML experiments overnight while you sleep. Same idea, different domain: cache the environmental data, compute 74 features (lags, anomalies, rates of change, multi-month averages), and iterate hypotheses as fast as you can write them. We called it autoscience.
 
-15 experiments in one sitting. Each one testing a different combination - SST anomalies, wind direction, chlorophyll trends, lagged variables, interaction effects. The best model hit t=8.09. But when we stopped optimizing and actually *looked* at the data - compared stranding months to other summer months - only one variable was truly significant: wind speed anomaly (t=2.19). Stranding months are just windier than usual.
+15 experiments in one sitting. Each one testing a different combination - sea surface temperature anomalies, wind direction, chlorophyll trends, lagged variables, interaction effects. The best model hit t=8.09. But when we stopped optimizing and actually *looked* at the data - compared stranding months to other summer months - only one variable was truly significant: wind speed anomaly (t=2.19). Stranding months are just windier than usual.
 
 And the chlorophyll signal went the wrong direction entirely. LOW chlorophyll predicts strandings, not high. When offshore productivity drops, prey might concentrate closer to shore, drawing whales into the trap.
 
