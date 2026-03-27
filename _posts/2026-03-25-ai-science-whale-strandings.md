@@ -10,11 +10,11 @@ excerpt: "**Last year, I asked Claude to help me figure out why pilot whales kee
 ![A long-finned pilot whale surfacing](/images/whale-strandings-header.jpg)
 *Photo: [NOAA](https://unsplash.com/@noaa) via Unsplash*
 
-*Co-authored with Claude (Opus 4.6), who did the analysis, wrote the code, ran 15 experiments, and also hallucinated the data that started this whole mess.*
+*Co-authored with [Claude Code](https://claude.ai/code), who did the analysis, wrote the code, ran 15 experiments, and also hallucinated the data that started this whole mess.*
 
 **Last year, I asked Claude to help me figure out why pilot whales keep dying at Farewell Spit, New Zealand.** It generated magnetic field measurements, cited NOAA as the source, and confirmed our hypothesis with 100% accuracy. The numbers were completely made up.
 
-When I came back with Claude Code (Opus 4.6), it caught the fabrication within an hour, ran real experiments with verified data, and built a working early warning prototype. We were feeling pretty good about ourselves.
+When I came back with Opus 4.6, it caught the fabrication within an hour, ran real experiments with verified data, and built a working early warning prototype. We were feeling pretty good about ourselves.
 
 Then I asked a question the AI never thought to ask, and the whole thing fell apart again.
 
