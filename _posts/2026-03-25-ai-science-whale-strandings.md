@@ -3,8 +3,8 @@ layout: post
 title:  "The Same Beach Has Killed Hundreds of Whales for Centuries. I Tried to Find Out Why."
 date:   2026-03-25 00:00:00
 image: /images/whale-strandings-header.jpg
-description: "AI fabricated scientific data with decimal precision and cited sources. Here's what happened when we checked, and the obvious question neither of us thought to ask."
-excerpt: "**AI fabricated scientific data. Decimal-precise measurements with realistic units and cited sources.** When we came back and actually verified, better AI caught the hallucination, ran real experiments, and built a working prototype. We were feeling pretty good. Then I asked a question the AI never thought to ask, and the whole thing fell apart again."
+description: "I asked Claude to figure out why whales keep dying at the same beach. It made up the data. Here's what happened when I checked."
+excerpt: "**Last year, I asked Claude to help me figure out why pilot whales keep dying at Farewell Spit, New Zealand.** It generated magnetic field measurements, cited NOAA as the source, and confirmed our hypothesis with 100% accuracy. The numbers were completely made up."
 ---
 
 ![A long-finned pilot whale surfacing](/images/whale-strandings-header.jpg)
@@ -12,7 +12,9 @@ excerpt: "**AI fabricated scientific data. Decimal-precise measurements with rea
 
 *Co-authored with Claude (Opus 4.6), who did the analysis, wrote the code, ran 15 experiments, and also hallucinated the data that started this whole mess.*
 
-**AI fabricated scientific data. Decimal-precise measurements with realistic units and cited sources.** When we came back and actually verified, better AI caught the hallucination, ran real experiments, and built a working prototype. We were feeling pretty good about ourselves.
+**Last year, I asked Claude to help me figure out why pilot whales keep dying at Farewell Spit, New Zealand.** It generated magnetic field measurements, cited NOAA as the source, and confirmed our hypothesis with 100% accuracy. The numbers were completely made up.
+
+When I came back with Claude Code (Opus 4.6), it caught the fabrication within an hour, ran real experiments with verified data, and built a working early warning prototype. We were feeling pretty good about ourselves.
 
 Then I asked a question the AI never thought to ask, and the whole thing fell apart again.
 
@@ -38,13 +40,13 @@ Within 48 hours, we had results:
 
 Three sites tested. Three showing the predicted pattern. 100% confirmation. Control sites showed the opposite. It was clean. It was beautiful.
 
-**It was a lie.** The real magnetic field at Farewell Spit is ~56,270 nT, not ~52,586 nT. The numbers were invented. The gradient doesn't even match the raw values in the same data structure - do the math yourself and you get a different number. The AI cited "NOAA WMM-2010" as the source. NOAA had nothing to do with it.
+**It was a lie.** The real magnetic field at Farewell Spit is ~56,270 nT, not ~52,586 nT. The gradient doesn't even match the raw values in the same data structure - do the math yourself and you get a different number.
+
+The tricky part: we'd used a Claude browser extension to scrape NOAA's actual online tool. The extension was buggy - it didn't navigate the browser well - and what it saved was somewhere between badly scraped and completely fabricated. But because it appeared to come from NOAA's real tool, we had every reason to trust it. That's what made this dangerous. It wasn't AI making up numbers from nothing. It was a broken tool-use workflow producing plausible garbage from a legitimate source.
 
 ## Act 2: The Reckoning
 
-When I came back to the project with Claude Code, things had changed. The models are significantly more capable and less hallucinatory. And this time, the first thing it did was verify the data - not take it on faith.
-
-The first thing it did was audit every number in the codebase. Within an hour:
+When I came back to the project with Claude Code, things had changed. The models are significantly more capable and less hallucinatory. The first thing it did was audit every number in the codebase. Within an hour:
 
 - **Farewell Spit**: Fabricated field values, ~3,700 nT off from reality
 - **Tasmania**: Coordinates **104 km off** - wrong side of the island
@@ -68,7 +70,15 @@ But instead of stopping there, we asked a different question: **can we predict *
 
 We pulled 20 years of satellite data - sea surface temperature, ocean chlorophyll, ERA5 wind reanalysis - all from free public APIs. Combined it with 20 historical stranding events at Farewell Spit. Built a risk model.
 
-**It worked.** t = 8.09, statistically significant. Every stranding month in our dataset scored above the median risk. We found that stranding months are *windier than usual*, and discovered something counterintuitive: stranding months have *lower* chlorophyll, not higher. When offshore productivity drops, prey might concentrate closer to shore, drawing whales into the trap.
+**It worked.** t = 8.09, statistically significant. Every stranding month in our dataset scored above the median risk.
+
+Then we went further. I'd been following Karpathy's [autoresearch](https://github.com/karpathy/autoresearch) - a system that runs ML experiments overnight while you sleep. Same idea, different domain: cache the environmental data, compute 74 features (lags, anomalies, rates of change, multi-month averages), and iterate hypotheses as fast as you can write them. We called it autoscience.
+
+15 experiments in one sitting. Each one testing a different combination - SST anomalies, wind direction, chlorophyll trends, lagged variables, interaction effects. The best model hit t=8.09. But when we stopped optimizing and actually *looked* at the data - compared stranding months to other summer months - only one variable was truly significant: wind speed anomaly (t=2.19). Stranding months are just windier than usual.
+
+And the chlorophyll signal went the wrong direction entirely. LOW chlorophyll predicts strandings, not high. When offshore productivity drops, prey might concentrate closer to shore, drawing whales into the trap.
+
+74 features. 15 experiments. And the honest answer was: "it's summer and it's windy."
 
 I was feeling great. The AI had redeemed itself. Caught its own hallucination, run real analysis, built a working prototype.
 
