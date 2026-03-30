@@ -3,16 +3,10 @@ layout: post
 title:  "Your Developer Experience Is Broken for AI Agents"
 date:   2026-03-30 00:00:00
 description: "I tested 30 AI agents on my SDK and cataloged every way they broke. Here's what I learned about building developer tools for AI."
-excerpt: "**I run a game platform where AI builds browser games. When we open-sourced our SDK, I tested it by spinning up 30 fresh AI agents and watching each one try to build a game.** They broke in ways I never expected - and they kept breaking the same ways, independently. Here's what I learned about developer experience when your user is an AI."
+excerpt: "**I spun up 30 fresh AI agents, one at a time, and told each one: build me a game with my SDK.** They all failed - and they kept failing the same ways, independently. Here's what I learned about developer experience when your user is an AI."
 ---
 
-*Co-authored with [Claude Code](https://claude.ai/code) - specifically the agent that started as test subject #8 and ended up rebuilding the SDK from the inside.*
-
-**I run [Star](https://buildwithstar.com) (YC S22), a platform where thousands of browser games have been built with AI.** We pulled the best parts out into an open-source SDK - audio that works on iPhones, canvas that handles retina screens, leaderboards with no backend.
-
-I thought it was ready. So I tested it: I spun up 30 fresh AI agents, one at a time, and told each one "build me a game." Then I watched where they broke.
-
-They broke in ways I never expected.
+**I spun up 30 fresh AI agents, one at a time, and told each one: "build me a game with my SDK."** They all failed - and they kept failing the same ways, independently.
 
 <!--more-->
 
@@ -39,14 +33,6 @@ Agents kept running `npx star-sdk install-docs` - a command that didn't exist. T
 We could have ignored it. Instead we added the alias. If every agent guesses the same wrong command, the command isn't wrong - your CLI is.
 
 **The fix:** Watch what commands agents try to run. Those are the commands you should have.
-
-## Don't ship a build step if your user is an AI
-
-One agent set up Vite, built the project, deployed the output, and got a black screen. Our deploy command rewrites bare imports to CDN URLs, but Vite had already bundled everything. The two steps fought each other.
-
-A human developer would have read the deploy docs and skipped the build step. An AI agent reached for the tool it knows best (a bundler) and added an unnecessary step that broke everything.
-
-**The fix:** If your tool doesn't need a build step, make that loud and clear. Better yet, detect it and warn.
 
 ## If an AI can call your function in a hot loop, one will
 
@@ -76,9 +62,10 @@ A few rules that came out of 30 test sessions:
 - **If agents guess a command, add it.** They're telling you what your CLI should be.
 - **Make everything idempotent.** It will be called from a hot loop eventually.
 - **Ship the docs inside the tool.** `npx star-sdk install` gives agents the full API before they write a line of code.
-- **Skip the build step.** One less thing for agents to misconfigure.
 - **Watch for convergent failures.** If 3+ agents make the same mistake, it's your bug, not theirs.
 - **Your best QA is an AI agent using your tool.** And your best developer might be one that failed at it first.
+
+These specific failures will change as models improve. The approach - testing your tools with real AI agents and treating convergent failures as design problems - won't.
 
 The result is the [Star SDK](https://github.com/buildwithstar/star-sdk). Two commands:
 
@@ -91,4 +78,4 @@ AI-generated game to live URL with leaderboards. Free and open source.
 
 Built by LLMs, for LLMs.
 
-*All code: [github.com/buildwithstar/star-sdk](https://github.com/buildwithstar/star-sdk)*
+*The SDK is part of [Star](https://buildwithstar.com) (YC S22), a platform where thousands of browser games have been built with AI. All code: [github.com/buildwithstar/star-sdk](https://github.com/buildwithstar/star-sdk). Co-authored with [Claude Code](https://claude.ai/code).*
