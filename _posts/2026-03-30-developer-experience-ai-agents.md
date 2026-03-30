@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Your Developer Experience Is Broken for AI Agents"
-date:   2026-03-28 00:00:00
+date:   2026-03-30 00:00:00
 description: "I tested 30 AI agents on my SDK and cataloged every way they broke. Here's what I learned about building developer tools for AI."
 excerpt: "**I run a game platform where AI builds browser games. When we open-sourced our SDK, I tested it by spinning up 30 fresh AI agents and watching each one try to build a game.** They broke in ways I never expected - and they kept breaking the same ways, independently. Here's what I learned about developer experience when your user is an AI."
 ---
