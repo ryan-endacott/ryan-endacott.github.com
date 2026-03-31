@@ -6,7 +6,7 @@ description: "I tested 30 AI agents on my SDK and cataloged every way they broke
 excerpt: "**I spun up 30 fresh AI agents, one at a time, and told each one: build me a game with my SDK.** They all failed - and they kept failing the same ways, independently. Here's what I learned about developer experience when your user is an AI."
 ---
 
-**I spun up 30 fresh AI agents, one at a time, and told each one: "build me a game with my SDK."** They all failed - and they kept failing the same ways, independently.
+**I spun up 30 fresh AI agents, one at a time, and told each one: "build me a game with my SDK."** They all failed - and they kept failing the same ways, independently. Here's what I learned about developer experience when your user is an AI.
 
 <!--more-->
 
