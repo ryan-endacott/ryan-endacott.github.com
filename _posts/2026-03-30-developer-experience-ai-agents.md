@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Your Developer Experience Is Broken for AI Agents"
+title:  "I Tested My SDK with 30 AI Agents. They All Broke It the Same Ways."
 date:   2026-03-30 00:00:00
 description: "I tested 30 AI agents on my SDK and cataloged every way they broke. Here's what I learned about building developer tools for AI."
 excerpt: "**I spun up 30 fresh AI agents, one at a time, and told each one: build me a game with my SDK.** They all failed - and they kept failing the same ways, independently. Here's what I learned about developer experience when your user is an AI."
