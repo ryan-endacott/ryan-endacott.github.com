@@ -4,7 +4,7 @@ meta_description: Ryan Endacott — builder, founder, tinkerer.
 
 markdown: kramdown
 highlighter: rouge
-logo: '/images/me3.jpg'
+logo: '/images/og-default-gemini.png'
 paginate: 3
 excerpt_separator: <!--more-->
 
